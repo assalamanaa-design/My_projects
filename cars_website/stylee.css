@@ -1,0 +1,103 @@
+@import url("car.jpg");
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background: url('car.jpg') center center fixed;
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position: center;
+   
+}
+.main {
+    padding:0 8%;
+}
+nav{
+    padding: 24px 0;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.logo h1{
+    width: 150px ;
+    font-size: 33px;
+    cursor:pointer;
+    color:#fff;
+}
+.nav-links{
+    display: flex;
+    flex:1;
+    align-items:center;
+}
+.nav-links a{
+margin-left: 36px;
+text-decoration: none;
+color: #fff;
+}
+.nav-links a:hover{
+    background-color:#000 ;
+    padding: 15px;
+}
+.nav-links .btn{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    padding: 10px  28px;
+    border-radius:5px ;
+}
+.content{
+    margin-top: 70px;
+    margin-left: 40px;
+    color: #fff;
+}
+.content h1{
+    font-size:60px;
+
+}
+.search{
+    background:#fff;
+    width: fit-content;
+    margin: 2px 0;
+    padding: 20px 20px;
+    display:flex;
+    align-items: center;
+}
+.search input{
+    background: transparent;
+    width: 500px;
+    border: 0;
+    outline: none;
+}
+button{
+    padding: 10px 20px;
+    margin-left: 18%;
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    cursor: pointer;
+}
+.cars button {
+    font-size: 1rem;
+}
+.form{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    background: rgb(32,31,31);
+}
+.form ::placeholder{
+    color: #fff;
+}
+.box input{
+    width: 75%;
+    margin: 10px;
+    margin-top: 18px;
+    margin-left: 21px;
+    padding: 13px 18px;
+    background: transparent;
+    border-bottom: 1px solid linear-gradient(to right, #00093c, #2d0b00);
+}
+
+

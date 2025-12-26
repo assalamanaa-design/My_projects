@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+         {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+section h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+#banner {
+	background-image: url("banner.jpg");
+	background-size: cover;
+	background-position: center;
+	color: 535353;
+	padding: 200px 0;
+	text-align: center;
+}
+
+#banner h2 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+#banner p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+#featured {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 35px;
+	padding: 18px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.product img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.product h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.product p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#testimonials {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.testimonial {
+	max-width: 600px;
+	margin: 0 auto 40px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p:first-child {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.testimonial p:last-child {
+	font-size: 18px;
+	margin-top: 20px;
+	font-style: italic;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Handmade Products</h3>
+        <nav>
+            <ul>
+                <li><a classe="active" href="landingPage.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Aboutuss.html">about us</a></li>
+                <li><a href="Contactuss.html">Contact us</a></li>
+            </ul>
+        </nav>
+       </header> 
+       <main>
+        <section>
+            <div>
+                <nav>
+                    <ul id="banner">
+                    <li><h2>welcome to handmade products </h2><p>we offre a wide range of unique, handecarfted items made by skiled articsans.</p>
+                    <input type="submit" value="shop now" class="btn" class="section"></li>
+
+                    </ul>
+                </nav>
+            
+            <h2>featured products</h2>
+            <div>
+                <nav>
+                    <ul class="product">
+                        <li classe="product img"><img src="c:\Users\pc asus\Downloads\1.webp" height="250" width="250"><h2 classe="section h2">product 1</h2> 
+                        <p>lorem iqsum sit amet,consectteture adipisicing elit </p><input type="submit " value="learn more" class="btn"></li>
+                        <li class="product img" class="main"><img src="c:\Users\pc asus\Downloads\2.webp" height="250" width="250"><h2 classe="section h2">product 2</h2><p>loren ipsum dolor sit amet, consectetur adipiscing elit.</p><input type="submit " value="learn more" class="btn"></li>
+                        <li classe="product img"><img src="c:\Users\pc asus\Downloads\3.webp" height="250" width="250"><h2 class="section h2" >product 3</h2><p>lorem ipsum dolor sit amet, consectetur adipiscing elit </p><input type="submit " value="learn more" class="btn"></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="testimonials">
+                <h2>wath our costumers say</h2>
+                    <li class="testimonial">
+                    <p>"i love the unique designs and quality of the products.hightly recomonded!"</p><p><strong>johen doe</strong> </p></li>
+                    <li class="testimonial"><p>"excelent costumer service and fast shiping , i will difenitly be a reapet costumer."</p><p><strong>jane smith</strong></p></li>
+            </div>
+        </div>
+     </section>
+       </main>
+       <footer>2023 handmade product .all rghts redrved</footer>
+    </div>
+</body>
+</html>
