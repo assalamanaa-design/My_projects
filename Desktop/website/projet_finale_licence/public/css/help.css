@@ -1,0 +1,72 @@
+.containerrr {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 100px;
+    margin-bottom: 100px ;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.help-section, .faq .accordion-item, .contact-form {
+    animation: fadeIn 1s ease-out;
+}
+
+.nav-item a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #007bff !important;
+    transform: translateY(-3px);
+}
+
+.nav-item a img {
+    transition: transform 0.3s ease;
+}
+
+.nav-item a:hover img {
+    transform: rotate(360deg);
+}
+
+.contact-form button {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 8px;
+background: #007BFF;
+color: white;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+background: #0056b3;
+transform: scale(1.05);
+}
+
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+.contact-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

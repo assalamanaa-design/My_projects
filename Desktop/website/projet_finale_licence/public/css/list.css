@@ -1,0 +1,220 @@
+
+
+/* Container principal (responsive avec sidebar) */
+.container {
+    margin:  auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeInContainer 0.5s ease-in-out;
+
+    /* Responsive avec sidebar */
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    margin-left: 10px; 
+    margin-right: 10px;/* largeur de la sidebar ouverte */
+   
+    max-width: 2000px;
+}
+.container h1{
+    color: var(--primary) ;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 35px;
+    }
+   
+/* Si la sidebar est fermée, appliquer une classe dynamique via JS */
+.sidebar-collapsed .container {
+    margin-left: 80px; /* largeur réduite */
+    width: calc(100% - 100px);
+}
+
+/* Animation douce */
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Animation pour les lignes de la table */
+.table tbody tr {
+    animation: tableRowAnimation 0.5s ease-out;
+}
+.table-striped th {
+    background-color: #e1f0ff;
+}
+/* ✅ Agrandir la taille du tableau */
+.table {
+    font-size: 16px; /* Texte plus lisible */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espacement entre les lignes */
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 14px 18px; /* Plus de padding */
+    vertical-align: middle;
+}
+.table th{
+    background-color: #e6f2ff;
+}
+
+.modal-body span{
+    color: black;
+}
+
+
+
+/* ✅ Bouton Mark as Resolved personnalisé */
+.btn-resolve {
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-resolve:hover {
+    background-color: #146c43;
+    transform: scale(1.05);
+}
+
+/* ✅ Bouton Reply déjà stylé via Bootstrap, on garde btn-primary */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Style des boutons */
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style du formulaire de création de patient */
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body input,
+.modal-body select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.modal-body label{
+    font-weight: bold;
+}
+.modal-body label:hover{
+    color: #007bff;
+}
+.modal-title {
+    color: #007bff;
+}
+
+.modal-body strong:hover{
+    color:#007bff
+    }
+    .table-striped th:hover{
+        color: #007bff;
+    }
+
+.modal-body button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-body button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation pour l'apparition des modals */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content {
+    animation: fadeInModal 0.5s ease-out;
+}
+
+/* Animation pour le bouton qui grandit au survol */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+

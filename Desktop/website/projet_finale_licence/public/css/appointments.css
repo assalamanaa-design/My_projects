@@ -1,0 +1,109 @@
+body {
+    background-color: #f9f9fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointments-table{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
+}
+
+.main-content h1 {
+    
+    color: var(--primary) ;
+    
+    margin-bottom: 0.5rem;
+    font-size: 35px;
+    
+
+}
+
+/* Container général */
+.appointments-table {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow-x: auto;
+    
+}
+
+.appointments-table:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Style du tableau */
+.appointments-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* En-têtes */
+table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+    text-align: left;
+    padding: 14px 20px;
+    border: none;
+    color: #333;
+}
+ 
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.table tbody tr {
+    animation: tableRowAnimation 0.5s ease-out;
+}
+
+/* Alertes */
+.alert {
+    z-index: 9999;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.table-light {
+    background-color: #e7f1ff; /* Bleu clair */
+}
+
+.table-light th {
+    background-color: #ddeafc; /* Bleu principal pour le texte */
+    font-weight: 600;
+    padding: 12px;
+}
+
+/* Boutons avec animation */
+.btn-success, .btn-danger {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
