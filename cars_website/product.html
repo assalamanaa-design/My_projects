@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+    }
+    
+    /* Header styles */
+    header {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+    
+    nav li:last-child {
+        margin-right: 0;
+    }
+    
+    nav a {
+        color: #333;
+        font-weight: bold;
+    }
+    
+    nav a.active,
+    nav a:hover {
+        color: #f15b2a;
+    }
+    
+    /* Main styles */
+    main {
+        margin-top: 80px;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .product-image img {
+        max-width: 100%;
+    }
+    
+    .product-info {
+        max-width: 500px;
+        flex-basis: calc(50% - 20px);
+    }
+    
+    .product-info h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .product-info p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .product-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .product-price h3 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    button {
+        background-color: #f15b2a;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1em;
+        padding: 20px;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            
+        <div class="logo img"><img src="c:\Users\pc asus\Downloads\logo.png" alt="logo"></div>
+      
+            <ul>
+                <li><a href="landingPage.html">Home</a></li>
+                <li><a classe="active" href="Product.html">Products</a></li>
+                <li><a href="Aboutuss.html">About us</a></li>
+                <li><a href="Contactuss.html">Contact us</a></li>
+            </ul>
+       
+        </nav>
+       </header> 
+       <br>
+       <br>
+       <br>
+       <main>
+        <div class="product-image">
+            <img src="c:\Users\pc asus\Downloads\product1.webp" >
+        </div>
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Loren ipsum dolo sit amet, consectetur adipiscing elit.Sed vel sempe isus. Vestibulum sed dui vel eat lacinia facilisis id vel magna.Aliquam erat volutpat.Nunc vel tortor id neque sodales gavida.</p>
+      
+      
+        <div class="product-price">
+         <h3>price:20$</h3>
+         <button type="button">Add cart</button>
+         </div>
+         </div>
+       </main>
+       <P>2023 Handmades Products</P>
+
+</body>
+</html>
